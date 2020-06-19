@@ -4,7 +4,7 @@
 <img src='1690-teaser.gif'>
 </p>
 
-### [[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf)] [[Project Page](https://fuenwang.ml/project/bifuse/?fbclid=IwAR0qKLtkrkGgtGiu2zdm7YpW-3DkBPzdYvonWYUqyv1yKFA1nLYz5Q5qqEM)]
+### [[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf)] [[Project Page](https://fuenwang.ml/project/bifuse/)]
 
 ## Getting Started
 #### Requirements
