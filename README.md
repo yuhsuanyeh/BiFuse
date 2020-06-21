@@ -17,7 +17,11 @@
 Please follow the instruction in [LayoutMP3D](https://github.com/fuenwang/LayoutMP3D) to download and pre-process the data.
 
 ## Usage
-Comming Soon :D
+#### Step1
+Download our [pretrained Model](https://drive.google.com/file/d/1EOEfyVuaJC1k5xAtqG37yXHxN-LnxA2n/view?usp=sharing) and put the .pkl file into **save** folder.
+#### Step2
+Put your own rgb images into **My_Test_Data** folder and run ```main.py``` to test your data. <br>
+After testing, you can see the results in **My_Test_Result** folder!
 
 ## License
 This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
