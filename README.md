@@ -45,9 +45,8 @@ After testing, you can see the results in **My_Test_Result** folder! <br>
 
 <p float="left">
   <img src="Fig_Sample/007.jpg" width="295" />
-  <img src="Fig_Sample/007.jpg" width="295" />
-  <img src="Fig_Sample/007.jpg" width="295" />
-
+  <img src="Fig_Sample/146.jpg" width="295" />
+  <img src="Fig_Sample/147.jpg" width="295" />
 </p>
 
 The Restuls contain two kinds of images, one is ```Combine.jpg``` and the other is ```Depth.jpg```. <br>
