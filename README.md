@@ -36,9 +36,8 @@ Put your own rgb images into **My_Test_Data** folder and run ```main.py``` to te
 python main.py --path './My_Test_Data' --crop True
 ```
 The defalut argument of **path** and **crop** is define as above. <br>
-**--path** is the folder path of your own testing images.  <br>
-**--crop** is True or False which decides whether discard the invalid region or not. <br>
-
+**```--path```** is the folder path of your own testing images.  <br>
+**```--crop```** is True or False which decides whether discard the invalid region or not. <br>
 
 
 If you don't need to change anything, you can simple run
