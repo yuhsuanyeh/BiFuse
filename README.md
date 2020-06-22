@@ -9,12 +9,8 @@
 ## Getting Started
 #### Requirements
 - Linux (tested on Ubuntu 18.04.4 LTS)
-- Anaconda
-- Python 3.7 (tested on 3.7.4)
-- PyTorch 1.4.0 (tested on 1.4.0 for execution)
-
-#### Prepare Data
-Please follow the instruction in [LayoutMP3D](https://github.com/fuenwang/LayoutMP3D) to download and pre-process the data.
+- Python (tested on 3.7.4)
+- PyTorch (tested on 1.4.0)
 
 ## Usage
 #### Step1
@@ -28,10 +24,10 @@ This work is licensed under MIT License. See [LICENSE](LICENSE) for details.
 
 If you find our code/models useful, please consider citing our paper:
 ```
-@InProceedings{BiFuse20,
+@InProceedings{Wang_2020_CVPR,
 author = {Wang, Fu-En and Yeh, Yu-Hsuan and Sun, Min and Chiu, Wei-Chen and Tsai, Yi-Hsuan},
 title = {BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion},
-booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
 year = {2020}
 }
