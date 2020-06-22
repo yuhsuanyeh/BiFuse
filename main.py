@@ -1,7 +1,6 @@
 from __future__ import print_function
 import os
 import cv2
-import yaml
 import tqdm
 import json
 import argparse
@@ -40,7 +39,7 @@ class MyData(data.Dataset):
     def __len__(self):
         return len(self.imgs)
 
-def Run(loader, model, config, writer, crop):
+def Run(loader, model, crop):
     model = model.eval()
     pbar = tqdm.tqdm(loader)
     pbar.set_description('Validation process')
@@ -76,36 +75,29 @@ def Run(loader, model, config, writer, crop):
                 count += 1
 
 def main():
-    with open('config.yaml', 'r') as f:
-        config = yaml.load(f)
-        print (json.dumps(config, indent=4))
-
-    np.random.seed(config['seed'])
-    torch.manual_seed(config['seed']) 
-    
     test_img = MyData(args.path)
     print('Test Data Num:', len(test_img))
     dataset_val = DataLoader(
             test_img,
-            batch_size=1,  #config['batch_size'],
-            num_workers=config['processes'],
+            batch_size=1,
+            num_workers=2,
             drop_last=False,
             pin_memory=True,
             shuffle=False
             )
 
-    saver = Utils.ModelSaver(config['save_path'])
+    saver = Utils.ModelSaver('./save')
     from models.FCRN import MyModel as ResNet
     model = ResNet(
-    		layers=config['model_layer'],
-    		decoder=config['decoder_type'],
+    		layers=50,
+    		decoder="upproj",
     		output_size=None,
     		in_channels=3,
     		pretrained=True
     		).cuda()
 
     saver.LoadLatestModel(model, None)
-    Run(dataset_val, model, config, None, not args.nocrop)
+    Run(dataset_val, model, not args.nocrop)
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,0 @@
-save_path: "./save"
-seed: 224
-processes: 20
-batch_size: 16
-model_layer: 50
-decoder_type: "upproj"
