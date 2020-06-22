@@ -27,7 +27,7 @@ This work is licensed under MIT License. See [LICENSE](LICENSE) for details.
 
 If you find our code/models useful, please consider citing our paper:
 ```
-@InProceedings{Wang_2020_CVPR,
+@InProceedings{BiFuse20,
 author = {Wang, Fu-En and Yeh, Yu-Hsuan and Sun, Min and Chiu, Wei-Chen and Tsai, Yi-Hsuan},
 title = {BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion},
 booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
