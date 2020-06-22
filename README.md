@@ -58,7 +58,7 @@ After testing, you can see the results in **My_Test_Result** folder! <br>
 <p float="left">
   <img src="Fig_Sample/260.jpg" width="295" />
   <img src="Fig_Sample/272.jpg" width="295" />
-  <img src="Fig_Sample/279.jpg" width="295" />
+  <img src="Fig_Sample/236.jpg" width="295" />
 </p>
 
 
