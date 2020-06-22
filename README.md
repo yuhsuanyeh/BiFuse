@@ -40,21 +40,21 @@ The argument of **path** and **crop**: <br>
 After testing, you can see the results in **My_Test_Result** folder! <br>
 + Here shows some sample results
 <p float="left">
-  <img src="src/007.jpg" width="297" />
-  <img src="src/146.jpg" width="297" />
-  <img src="src/147.jpg" width="297" />
+  <img src="src/007.jpg" width="296" />
+  <img src="src/146.jpg" width="296" />
+  <img src="src/147.jpg" width="296" />
 </p>
 
 <p float="left">
-  <img src="src/200.jpg" width="297" />
-  <img src="src/232.jpg" width="297" />
-  <img src="src/246.jpg" width="297" />
+  <img src="src/200.jpg" width="296" />
+  <img src="src/232.jpg" width="296" />
+  <img src="src/246.jpg" width="296" />
 </p>
 
 <p float="left">
-  <img src="src/260.jpg" width="297" />
-  <img src="src/272.jpg" width="297" />
-  <img src="src/236.jpg" width="297" />
+  <img src="src/260.jpg" width="296" />
+  <img src="src/272.jpg" width="296" />
+  <img src="src/236.jpg" width="296" />
 </p>
 
 
