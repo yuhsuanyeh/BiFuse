@@ -2,14 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.models
-try:
-    from .conv_bilstm import BiLSTM
-except:
-    from conv_bilstm import BiLSTM
 import collections
 import math
 import sys
-sys.path.append('../')
 import Utils
 from Utils.CubePad import CustomPad
 
