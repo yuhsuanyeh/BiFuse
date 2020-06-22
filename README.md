@@ -13,7 +13,7 @@
 - Python 3.7 (tested on 3.7.4)
 - PyTorch 1.4.0 (tested on 1.4.0 for execution)
 
-#### Prepare Date
+#### Prepare Data
 Please follow the instruction in [LayoutMP3D](https://github.com/fuenwang/LayoutMP3D) to download and pre-process the data.
 
 ## Usage
