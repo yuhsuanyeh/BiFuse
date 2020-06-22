@@ -1,4 +1,4 @@
-# [CVPR2020]BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
+# BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
 
 <p align='center'>
 <img src='1690-teaser.gif'>
@@ -28,14 +28,12 @@ mkdir save
 ```
 then put the ```BiFuse_Pretrained.pkl``` into **save** folder.
 #### Step2
-```
-mkdir My_Test_Data
-```
-Put your own rgb images into **My_Test_Data** folder and run ```main.py``` to test your data.
+**My_Test_Data** folder has contained a ```Sample.jpg``` RGB image as an example. <br> 
+If you want to test your own data, please put your own rgb images into **My_Test_Data** folder and run:
 ```
 python main.py --path './My_Test_Data' --crop True
 ```
-The defalut argument of **path** and **crop** is define as above. <br>
+The default argument of **path** and **crop** is defined as above. <br>
 **```--path```** is the folder path of your own testing images.  <br>
 **```--crop```** is **True** or **False** which decides whether discard the invalid region or not. <br>
 
