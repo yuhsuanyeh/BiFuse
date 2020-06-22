@@ -44,7 +44,6 @@ class ZeroPad(nn.Module):
 
 class CubePad(nn.Module):
     def __init__(self, pad_size, pad_corner=True, CUDA=True):
-        print('New CP by Fu-En')
         super(CubePad, self).__init__()
         self.CUDA = CUDA
         self.pad_corner = pad_corner 
@@ -166,11 +165,5 @@ class CubePad(nn.Module):
                     out2[:, :, h-down_pad:h, w-right_pad:w] = out[:, :, h-down_pad:h, (w-right_pad-1):(w-right_pad)].repeat(1, 1, 1, right_pad).clone()
 
         return out2
-
-if __name__ == '__main__':
-    a = np.zeros([12, 64, 256, 256])
-    a = Variable(torch.FloatTensor(a)).cuda() 
-    cp = CubePad(2)
-    print(cp(a).size())
 
 

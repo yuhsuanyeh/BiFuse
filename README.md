@@ -44,21 +44,21 @@ python main.py
 After testing, you can see the results in **My_Test_Result** folder! <br>
 + Here shows some sample results
 <p float="left">
-  <img src="Fig_Sample/007.jpg" width="295" />
-  <img src="Fig_Sample/146.jpg" width="295" />
-  <img src="Fig_Sample/147.jpg" width="295" />
+  <img src="src/007.jpg" width="295" />
+  <img src="src/146.jpg" width="295" />
+  <img src="src/147.jpg" width="295" />
 </p>
 
 <p float="left">
-  <img src="Fig_Sample/200.jpg" width="295" />
-  <img src="Fig_Sample/232.jpg" width="295" />
-  <img src="Fig_Sample/246.jpg" width="295" />
+  <img src="src/200.jpg" width="295" />
+  <img src="src/232.jpg" width="295" />
+  <img src="src/246.jpg" width="295" />
 </p>
 
 <p float="left">
-  <img src="Fig_Sample/260.jpg" width="295" />
-  <img src="Fig_Sample/272.jpg" width="295" />
-  <img src="Fig_Sample/236.jpg" width="295" />
+  <img src="src/260.jpg" width="295" />
+  <img src="src/272.jpg" width="295" />
+  <img src="src/236.jpg" width="295" />
 </p>
 
 

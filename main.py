@@ -1,32 +1,23 @@
 from __future__ import print_function
 import os
-import argparse
+import cv2
 import yaml
 import tqdm
 import json
-from imageio import imwrite
+import argparse
 import numpy as np
-import matplotlib.pyplot as plt
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.utils.data import DataLoader
-import Utils
-from torch.utils import data
-import torchvision.utils as vutils
-from torchvision import transforms
 from PIL import Image
-import matplotlib.pyplot as plt
-import cv2
-
-#torch.backends.cudnn.benchmark = True
-torch.backends.cudnn.deterministic = True
+from imageio import imwrite
+import torch
+from torch.utils import data
+from torch.utils.data import DataLoader
+from torchvision import transforms
+import Utils
 
 parser = argparse.ArgumentParser(description='BiFuse script for 360 depth prediction!',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--pre', default=None, type=int, help='pretrain(default: latest)')
 parser.add_argument('--path', default='./My_Test_Data', type=str, help='write path here')
-parser.add_argument('--crop', default=True, type=int, help='crop area')
+parser.add_argument('--crop', default=True, type=bool, help='crop area')
 args = parser.parse_args()
 
 class MyData(data.Dataset):
@@ -49,7 +40,7 @@ class MyData(data.Dataset):
     def __len__(self):
         return len(self.imgs)
 
-def val_an_epoch(loader, model, config, writer, crop):
+def Run(loader, model, config, writer, crop):
     model = model.eval()
     pbar = tqdm.tqdm(loader)
     pbar.set_description('Validation process')
@@ -113,10 +104,8 @@ def main():
     		pretrained=True
     		).cuda()
 
-    saver.LoadLatestModel(model, args.pre)
-
-    writer = None
-    val_an_epoch(dataset_val, model, config, writer, args.crop)
+    saver.LoadLatestModel(model, None)
+    Run(dataset_val, model, config, None, args.crop)
 
 if __name__ == '__main__':
     main()

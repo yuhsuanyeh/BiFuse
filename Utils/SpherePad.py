@@ -5,13 +5,11 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from scipy.misc import imread
 from .Equirec2Cube import Equirec2Cube
 
 
 class SpherePad(nn.Module):
     def __init__(self, pad_size):
-        print ('SpherePad by Fu-En')
         super(SpherePad, self).__init__()
         self.pad_size = pad_size
         self.data = {}
@@ -57,9 +55,15 @@ class SpherePad(nn.Module):
                 out[face][connect_side] = {}
                 x = xy[:, :, :, 0:1]
                 y = xy[:, :, :, 1:2]
+                '''
                 mask1 = np.logical_and(x >= -1.01, x <= 1.01)
                 mask2 = np.logical_and(y >= -1.01, y <= 1.01)
                 mask = np.logical_and(mask1, mask2)
+                '''
+                mask1 = (x >= -1.01) & (x <= 1.01)
+                mask2 = (y >= -1.01) & (y <= 1.01)
+                mask = mask1 & mask2
+
                 xy = torch.clamp(xy, -1, 1)
                 if connect_side == 'up':
                     out[face][connect_side]['mask'] = mask[:, :pad, :, :]
@@ -81,7 +85,6 @@ class SpherePad(nn.Module):
         assert bs % 6 == 0 and h == w
         key = '(%d,%d,%d)' % (h, w, self.pad_size)
         if key not in self.data:
-            print ('%s is created' % (key))
             theta = 2 * np.arctan((0.5 * h + self.pad_size) / (0.5 * h))
             e2c_ori = Equirec2Cube(1, 2*h, 4*h, h, 90)
             e2c = Equirec2Cube(

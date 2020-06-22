@@ -112,29 +112,8 @@ class ResNet(nn.Module):
     def __init__(self, block, layers, num_classes=1000, zero_init_residual=False, padding='ZeroPad'):
         super(ResNet, self).__init__()
         self.padding = getattr(Utils.CubePad, padding)
-        print (self.padding)
         self.inplanes = 64
-        '''
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
-                               bias=False)
-        self.bn1 = nn.BatchNorm2d(64)
-        self.relu = nn.ReLU(inplace=True)
-        self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
-        '''
-        '''
-        self.conv1 = nn.Sequential(
-                    self.padding(3),
-                    nn.Conv2d(3, 64, kernel_size=7, stride=2, bias=False)
-                )
-        self.bn1 = nn.BatchNorm2d(64)
-        self.relu = nn.ReLU(inplace=True)
-        self.maxpool = nn.Sequential(
-                    self.padding(1),
-                    nn.MaxPool2d(kernel_size=3, stride=2)
-                )
-        '''
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=0,
-                               bias=False)
+        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=0, bias=False)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU(inplace=True)
         self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=0)

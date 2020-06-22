@@ -555,9 +555,3 @@ class MyModel(nn.Module):
     def forward(self, x):
         return self.forward_FCRN_fusion(x, True)
 
-if __name__ == '__main__':
-    model = MyModel(50, 'upproj', None, 3, True).cuda()
-
-    a = torch.randn(1, 3, 512, 1024).cuda()
-    a, b, c = model(a)
-    print(a.shape,b.shape,c.shape)
