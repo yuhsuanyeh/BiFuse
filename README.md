@@ -1,4 +1,4 @@
-# BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
+# [CVPR2020]BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
 
 <p align='center'>
 <img src='1690-teaser.gif'>
@@ -37,7 +37,7 @@ The default argument of **path** and **crop** is defined as above. <br>
 **```--path```** is the folder path of your own testing images.  <br>
 **```--crop```** is **True** or **False** which decides whether discard the invalid region or not. <br>
 
-If you don't need to change anything, you can simply run
+If you don't need to change anything, you can simply run:
 ```
 python main.py
 ```
