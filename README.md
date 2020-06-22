@@ -8,9 +8,12 @@
 
 ## Getting Started
 #### Requirements
-- Linux (tested on Ubuntu 18.04.4 LTS)
 - Python (tested on 3.7.4)
 - PyTorch (tested on 1.4.0)
+- Other dependencies
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 #### Step1
