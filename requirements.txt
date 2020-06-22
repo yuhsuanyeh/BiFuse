@@ -1,0 +1,11 @@
+pyyaml
+tqdm
+numpy
+matplotlib
+opencv-python
+scipy
+attrdict
+tensorboardX==1.5
+termcolor
+scikit-image
+
