@@ -1,4 +1,4 @@
-# [CVPR2020]BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
+# [CVPR2020] BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
 
 <p align='center'>
 <img src='1690-teaser.gif'>
@@ -42,6 +42,11 @@ If you don't need to change anything, you can simply run:
 python main.py
 ```
 After testing, you can see the results in **My_Test_Result** folder! <br>
+
+<figure class="third">
+    <img src="Fig_Sample/007.jpg" width="300"/><img src="Fig_Sample/146.jpg" width="300"/><img src="Fig_Sample/147.jpg" width="300"/>
+</figure>
+
 
 The Restuls contain two kinds of images, one is ```Combine.jpg``` and the other is ```Depth.jpg```. <br>
 ```Combine.jpg``` is concatenate rgb image with its corresponding depth map prediction. <br>
