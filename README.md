@@ -42,7 +42,7 @@ If you don't need to change anything, you can simply run:
 python main.py
 ```
 After testing, you can see the results in **My_Test_Result** folder! <br>
-+ Here show some Sample Results
++ Here shows some sample results
 <p float="left">
   <img src="Fig_Sample/007.jpg" width="295" />
   <img src="Fig_Sample/146.jpg" width="295" />
