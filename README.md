@@ -41,7 +41,11 @@ If you don't need to change anything, you can simply run:
 ```
 python main.py
 ```
-After testing, you can see the results in **My_Test_Result** folder!
+After testing, you can see the results in **My_Test_Result** folder! <br>
+
+The Restuls contain two kinds of images, one is ```Combine.jpg``` and the other is ```Depth.jpg```. <br>
+```Combine.jpg``` is concatenate rgb image with its corresponding depth map prediction. <br>
+```Depth.jpg``` is only depth map prediction. <br>
 
 ## License
 This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
