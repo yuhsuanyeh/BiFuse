@@ -8,4 +8,3 @@ attrdict
 tensorboardX==1.5
 termcolor
 scikit-image
-
