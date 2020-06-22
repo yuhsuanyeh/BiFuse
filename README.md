@@ -43,7 +43,7 @@ python main.py
 ```
 After testing, you can see the results in **My_Test_Result** folder! <br>
 
-<p float="right">
+<p float="left">
   <img src="Fig_Sample/007.jpg" width="300" />
   <img src="Fig_Sample/007.jpg" width="300" />
   <img src="Fig_Sample/007.jpg" width="300" />
