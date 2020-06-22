@@ -42,15 +42,28 @@ If you don't need to change anything, you can simply run:
 python main.py
 ```
 After testing, you can see the results in **My_Test_Result** folder! <br>
-
++ Here show some Sample Results
 <p float="left">
   <img src="Fig_Sample/007.jpg" width="295" />
   <img src="Fig_Sample/146.jpg" width="295" />
   <img src="Fig_Sample/147.jpg" width="295" />
 </p>
 
+<p float="left">
+  <img src="Fig_Sample/200.jpg" width="295" />
+  <img src="Fig_Sample/232.jpg" width="295" />
+  <img src="Fig_Sample/246.jpg" width="295" />
+</p>
+
+<p float="left">
+  <img src="Fig_Sample/260.jpg" width="295" />
+  <img src="Fig_Sample/272.jpg" width="295" />
+  <img src="Fig_Sample/279.jpg" width="295" />
+</p>
+
+
 The Restuls contain two kinds of images, one is ```Combine.jpg``` and the other is ```Depth.jpg```. <br>
-```Combine.jpg``` is concatenate rgb image with its corresponding depth map prediction. <br>
+```Combine.jpg``` is concatenating rgb image with its corresponding depth map prediction. <br>
 ```Depth.jpg``` is only depth map prediction. <br>
 
 ## License
