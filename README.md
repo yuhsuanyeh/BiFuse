@@ -33,7 +33,7 @@ If you want to test your own data, please put your own rgb images into **My_Test
 ```
 python main.py --path './My_Test_Data'
 ```
-The default argument of **path** and **crop** is defined as above. <br>
+The argument of **path** and **crop**: <br>
 **```--path```** is the folder path of your own testing images.  <br>
 **```--nocrop```**  if you don't want to crop the original images. <br>
 
