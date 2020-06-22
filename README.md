@@ -21,13 +21,13 @@ First clone our repo:
 git clone https://github.com/Yeh-yu-hsuan/BiFuse.git
 cd BiFuse
 ```
-#### Step1
+### Step1
 Download our [pretrained Model](https://drive.google.com/file/d/1EOEfyVuaJC1k5xAtqG37yXHxN-LnxA2n/view?usp=sharing) and create a **save** folder:
 ```
 mkdir save
 ```
 then put the ```BiFuse_Pretrained.pkl``` into **save** folder.
-#### Step2
+### Step2
 **My_Test_Data** folder has contained a ```Sample.jpg``` RGB image as an example. <br> 
 If you want to test your own data, please put your own rgb images into **My_Test_Data** folder and run:
 ```
