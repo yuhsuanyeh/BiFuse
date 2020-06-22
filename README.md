@@ -16,10 +16,35 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+First clone our repo:
+```
+git clone https://github.com/Yeh-yu-hsuan/BiFuse.git
+cd BiFuse
+```
 #### Step1
-Download our [pretrained Model](https://drive.google.com/file/d/1EOEfyVuaJC1k5xAtqG37yXHxN-LnxA2n/view?usp=sharing) and put the .pkl file into **save** folder.
+Download our [pretrained Model](https://drive.google.com/file/d/1EOEfyVuaJC1k5xAtqG37yXHxN-LnxA2n/view?usp=sharing) and create a **save** folder:
+```
+mkdir save
+```
+then put the ```BiFuse_Pretrained.pkl``` into **save** folder.
 #### Step2
-Put your own rgb images into **My_Test_Data** folder and run ```main.py``` to test your data. <br>
+```
+mkdir My_Test_Data
+```
+Put your own rgb images into **My_Test_Data** folder and run ```main.py``` to test your data.
+```
+python main.py --path './My_Test_Data' --crop True
+```
+The defalut argument of **path** and **crop** is define as above. <br>
+**--path** is the folder path of your own testing images.  <br>
+**--crop** is True or False which decides whether discard the invalid region or not. <br>
+
+
+
+If you don't need to change anything, you can simple run
+```
+python main.py
+```
 After testing, you can see the results in **My_Test_Result** folder!
 
 ## License
