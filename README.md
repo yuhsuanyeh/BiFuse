@@ -1,7 +1,7 @@
 # [CVPR2020] BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
 
 <p align='center'>
-<img src='1690-teaser.gif'>
+<img src='src/1690-teaser.gif'>
 </p>
 
 ### [[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_BiFuse_Monocular_360_Depth_Estimation_via_Bi-Projection_Fusion_CVPR_2020_paper.pdf)] [[Project Page](https://fuenwang.ml/project/bifuse/)]
@@ -31,16 +31,12 @@ then put the ```BiFuse_Pretrained.pkl``` into **save** folder.
 **My_Test_Data** folder has contained a ```Sample.jpg``` RGB image as an example. <br> 
 If you want to test your own data, please put your own rgb images into **My_Test_Data** folder and run:
 ```
-python main.py --path './My_Test_Data' --crop True
+python main.py --path './My_Test_Data'
 ```
 The default argument of **path** and **crop** is defined as above. <br>
 **```--path```** is the folder path of your own testing images.  <br>
-**```--crop```** is **True** or **False** which decides whether discard the invalid region or not. <br>
+**```--nocrop```**  if you don't want to crop the original images. <br>
 
-If you don't need to change anything, you can simply run:
-```
-python main.py
-```
 After testing, you can see the results in **My_Test_Result** folder! <br>
 + Here shows some sample results
 <p float="left">

@@ -16,8 +16,8 @@ import Utils
 
 parser = argparse.ArgumentParser(description='BiFuse script for 360 depth prediction!',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--path', default='./My_Test_Data', type=str, help='write path here')
-parser.add_argument('--crop', default=True, type=bool, help='crop area')
+parser.add_argument('--path', default='./My_Test_Data', type=str, help='Path of source images')
+parser.add_argument('--nocrop', action='store_true', help='Disable cropping')
 args = parser.parse_args()
 
 class MyData(data.Dataset):
@@ -105,7 +105,7 @@ def main():
     		).cuda()
 
     saver.LoadLatestModel(model, None)
-    Run(dataset_val, model, config, None, args.crop)
+    Run(dataset_val, model, config, None, not args.nocrop)
 
 if __name__ == '__main__':
     main()
