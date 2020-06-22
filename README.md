@@ -1,4 +1,4 @@
-# [CVPR2020]BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
+# BiFuse: Monocular 360 Depth Estimation via Bi-Projection Fusion
 
 <p align='center'>
 <img src='1690-teaser.gif'>
