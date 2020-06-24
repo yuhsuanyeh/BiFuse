@@ -235,7 +235,7 @@ class fusion_ResNet(nn.Module):
 
         self.output_size = output_size
         if output_size == None:
-            output_size = _output_size_init
+            output_size = self._output_size_init
         else:
             assert isinstance(output_size, tuple)
         self.relu = pretrained_model._modules['relu']
