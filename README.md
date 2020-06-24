@@ -40,21 +40,21 @@ Our argument: <br>
 After testing, you can see the results in **My_Test_Result** folder! <br>
 + Here shows some sample results
 <p float="left">
-  <img src="src/007.jpg" width="295" />
-  <img src="src/146.jpg" width="295" />
-  <img src="src/147.jpg" width="295" />
+  <img src="src/007.jpg" width="30%" align="middle"/>
+  <img src="src/146.jpg" width="30%" align="middle"/>
+  <img src="src/147.jpg" width="30%" align="middle"/>
 </p>
 
 <p float="left">
-  <img src="src/200.jpg" width="295" />
-  <img src="src/232.jpg" width="295" />
-  <img src="src/246.jpg" width="295" />
+  <img src="src/200.jpg" width="30%" align="middle"/>
+  <img src="src/232.jpg" width="30%" align="middle"/>
+  <img src="src/246.jpg" width="30%" align="middle"/>
 </p>
 
 <p float="left">
-  <img src="src/260.jpg" width="295" />
-  <img src="src/272.jpg" width="295" />
-  <img src="src/236.jpg" width="295" />
+  <img src="src/260.jpg" width="30%" align="middle" />
+  <img src="src/272.jpg" width="30%" align="middle" />
+  <img src="src/236.jpg" width="30%" align="middle" />
 </p>
 
 
