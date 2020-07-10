@@ -55,6 +55,7 @@ def Run(loader, model, crop):
             raw_pred_var, pred_cube_var, refine = model(inputs)
             ### Convert to Numpy and Normalize to 0~1 ###
             dep_np = torch.clamp(refine, 0, 10).data.cpu().numpy()
+            d_tmp = dep_np.copy()
             dep_np = dep_np/10
             rgb_np = data.permute(0,2,3,1).data.cpu().numpy()
 
@@ -72,6 +73,12 @@ def Run(loader, model, crop):
                 only_dep = cat_dep[upper:lower]
                 imwrite('My_Test_Result/Combine%.3d.jpg'%count, (big*255).astype(np.uint8))
                 imwrite('My_Test_Result/Depth%.3d.jpg'%count, (only_dep*255).astype(np.uint8))
+                d = {
+                            'RGB': cat_rgb,
+                            'depth': d_tmp[i, 0, ...]
+                        }
+                np.save('My_Test_Result/Data%.3d.npy'%count, d)
+
                 count += 1
 
 def main():
