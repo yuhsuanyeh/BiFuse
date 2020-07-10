@@ -5,24 +5,15 @@ from vispy import app
 
 if __name__ == '__main__':
     argv = sys.argv
-    '''
     if len(argv) != 2:
         print ('Usage: python vis3D.py xxxx.npy')
         exit()
-    data = np.load(argv[1], allow_pickle=True)
-    '''
+    data = np.load(argv[1], allow_pickle=True).item()
 
-    data = np.load('../My_Test_Result/Data000.npy', allow_pickle=True).item()
     RGB = data['RGB']
     depth = data['depth']
     grid = utils.SphereGrid(*depth.shape)
     
-    '''
-    import matplotlib.pyplot as plt
-    plt.imshow(depth)
-    plt.show()
-    '''
-
     aaa = 85
     bbb = 420
 
