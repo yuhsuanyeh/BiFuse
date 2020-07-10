@@ -58,9 +58,13 @@ After testing, you can see the results in **My_Test_Result** folder! <br>
 </p>
 
 
-The Restuls contain two kinds of images, one is ```Combine.jpg``` and the other is ```Depth.jpg```. <br>
+The Restuls contain ```Combine.jpg```, ```Depth.jpg```, and ```Data.npy```. <br>
 ```Combine.jpg``` is concatenating rgb image with its corresponding depth map prediction. <br>
 ```Depth.jpg``` is only depth map prediction. <br>
+```Data.npy``` is the original data of both RGB and predicted depth value. <br>
+
+### Point Cloud Visualization
+If you also want to visualize the point cloud of predicted depth, we also provide the script to render it. You can have a look at [tools/](https://github.com/Yeh-yu-hsuan/BiFuse/tree/master/tools).
 
 ## License
 This work is licensed under MIT License. See [LICENSE](LICENSE) for details. 
