@@ -15,4 +15,4 @@ Then the visualized result will start running.
 conda install vispy
 ```
 
-<img src="">
+<img src="https://github.com/Yeh-yu-hsuan/BiFuse/blob/master/src/fig.png" href="https://github.com/Yeh-yu-hsuan/BiFuse/blob/master/src/fig.png" width="60%"></img>
