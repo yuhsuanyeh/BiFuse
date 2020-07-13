@@ -6,7 +6,7 @@ python main.py
 ```
 You can run the script **vis3D.py** and **specify the npy file** from main.py. For example,
 ```bash
-python vis3D.py ../My_Test_Data/Data000.npy
+python vis3D.py ../My_Test_Result/Data000.npy
 ```
 Then the visualized result will start running.
 
